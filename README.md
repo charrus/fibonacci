@@ -1,6 +1,7 @@
 # Fibonacci benchmarks
 
 ```
+fibonacci recursive:
 0
 1
 1
@@ -11,6 +12,8 @@
 13
 21
 34
+
+fibonacci iterative:
 0
 1
 1
@@ -21,6 +24,8 @@
 13
 21
 34
+
+fibonacci quotient:
 0
 1
 1
@@ -31,41 +36,13 @@
 13
 21
 34
-9.281236999999237
-PS D:\projects\fibonacci> ^C
-PS D:\projects\fibonacci>
-PS D:\projects\fibonacci>  d:; cd 'd:\projects\fibonacci'; & 'c:\Python312\python.exe' 'c:\Users\charlie\.vscode\extensions\ms-python.debugpy-2024.12.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '38078' '--' 'D:\projects\fibonacci\fibonacci.py' 
-0
-1
-1
-2
-3
-5
-8
-13
-21
-34
-0
-1
-1
-2
-3
-5
-8
-13
-21
-34
-0
-1
-1
-2
-3
-5
-8
-13
-21
-34
-9.254234199997882
-0.3859386000003724
-1.8735844000002544
+
+fibonacci recursive timeit:
+9.262305799999012
+
+fibonacci iterative timeit:
+0.38637349999771686
+
+fibonacci quotient timeit:
+1.8692778999975417
 ```

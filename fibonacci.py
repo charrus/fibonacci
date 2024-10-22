@@ -49,23 +49,26 @@ num = 10
 print("fibonacci recursive:")
 for i in range(num):
     print(fibonacci1(i))
-print
+print()
 
 print("fibonacci iterative:")
 for i in range(num):
     print(fibonacci2(i))
-print
+print()
 
 print("fibonacci quotient:")
 for i in range(num):
     print(fibonacci3(i))
-print
+print()
 
-print("fibonacci recursive:")
+print("fibonacci recursive timeit:")
 print(timeit.timeit("fibonacci1(10)", setup="from __main__ import fibonacci1"))
+print()
 
-print("fibonacci iterative:")
+print("fibonacci iterative timeit:")
 print(timeit.timeit("fibonacci2(10)", setup="from __main__ import fibonacci2"))
+print()
 
-print("fibonacci quotient:")
+print("fibonacci quotient timeit:")
 print(timeit.timeit("fibonacci3(10)", setup="from __main__ import fibonacci3"))
+print()
