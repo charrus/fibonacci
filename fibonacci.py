@@ -23,6 +23,7 @@ def fibonacci2(i: int) -> int:
     return n3
 
 def fibonacci3(i: int) -> int:
+    # Credit: https://medium.com/starts-with-a-bang/ask-ethan-what-explains-the-fibonacci-sequence-0dfc9822184f
     if i <= 1:
         return i
     length = len(str(i)) + 1
