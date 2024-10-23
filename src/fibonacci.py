@@ -108,7 +108,7 @@ def fibonacci5(i: int) -> int:
     return num
 
 
-def main():
+def main() -> None:
     num = 10
 
     print("fibonacci recursive:")
