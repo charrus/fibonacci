@@ -101,8 +101,9 @@ def fibonacci5(i: int) -> int:
     # Strip off the leading 0.
     nums = str(D.Decimal("1") / D.Decimal(quotient_str))[2:]
 
-    j: int = int(length * (i - 0))
+    j: int = int(length * i)
     k: int = int(length * (i + 1))
+
     num = int(nums[j:k])
 
     return num
@@ -137,23 +138,43 @@ def main() -> None:
     print()
 
     print("fibonacci recursive timeit:")
-    print(timeit.timeit("fibonacci1(10)", setup="from __main__ import fibonacci1"))
+    print(
+        timeit.timeit(
+            "fibonacci1(10)", setup="from __main__ import fibonacci1"
+        )
+    )
     print()
 
     print("fibonacci iterative timeit:")
-    print(timeit.timeit("fibonacci2(10)", setup="from __main__ import fibonacci2"))
+    print(
+        timeit.timeit(
+            "fibonacci2(10)", setup="from __main__ import fibonacci2"
+        )
+    )
     print()
 
     print("fibonacci quotient timeit:")
-    print(timeit.timeit("fibonacci3(10)", setup="from __main__ import fibonacci3"))
+    print(
+        timeit.timeit(
+            "fibonacci3(10)", setup="from __main__ import fibonacci3"
+        )
+    )
     print()
 
     print("fibonacci fixed quotient timeit:")
-    print(timeit.timeit("fibonacci4(10)", setup="from __main__ import fibonacci4"))
+    print(
+        timeit.timeit(
+            "fibonacci4(10)", setup="from __main__ import fibonacci4"
+        )
+    )
     print()
 
     print("fibonacci fixed quotient with strings timeit:")
-    print(timeit.timeit("fibonacci5(10)", setup="from __main__ import fibonacci5"))
+    print(
+        timeit.timeit(
+            "fibonacci5(10)", setup="from __main__ import fibonacci5"
+        )
+    )
     print()
 
 
